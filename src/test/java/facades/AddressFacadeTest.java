@@ -5,6 +5,7 @@ import dtos.PersonDTO;
 import dtos.ZipDTO;
 import edu.emory.mathcs.backport.java.util.Arrays;
 import entities.*;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -20,6 +21,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 @Disabled
+@Ignore
 class AddressFacadeTest {
     private static EntityManagerFactory emf;
     private static AddressFacade facade;

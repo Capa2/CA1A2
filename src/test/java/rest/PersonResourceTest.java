@@ -4,6 +4,7 @@ import dtos.*;
 import entities.*;
 import facades.PersonFacade;
 import io.restassured.http.ContentType;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import utils.EMF_Creator;
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;
@@ -29,8 +30,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 //Uncomment the line below, to temporarily disable this test
-//@Disabled
-
+@Disabled
+@Ignore
 public class PersonResourceTest {
 
     private static final int SERVER_PORT = 7777;

@@ -6,6 +6,7 @@ import entities.Address;
 import entities.Person;
 import entities.Phone;
 import entities.Zip;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -20,6 +21,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 @Disabled
+@Ignore
 class PhoneFacadeTest {
     private static EntityManagerFactory emf;
     private static PhoneFacade facade;

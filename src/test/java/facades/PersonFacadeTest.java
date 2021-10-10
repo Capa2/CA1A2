@@ -2,6 +2,7 @@ package facades;
 
 import dtos.*;
 import entities.*;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.*;
 import utils.EMF_Creator;
 
@@ -14,6 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 @Disabled
+@Ignore
 class PersonFacadeTest {
     private static EntityManagerFactory emf;
     private static PersonFacade facade;

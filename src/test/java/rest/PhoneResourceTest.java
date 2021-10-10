@@ -7,6 +7,7 @@ import entities.Phone;
 import entities.Zip;
 import facades.PhoneFacade;
 import io.restassured.http.ContentType;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.glassfish.grizzly.http.util.HttpStatus;
 import utils.EMF_Creator;
 import io.restassured.RestAssured;
@@ -27,7 +28,8 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 //Uncomment the line below, to temporarily disable this test
 
-//@Disabled
+@Disabled
+@Ignore
 public class PhoneResourceTest {
 
     private static final int SERVER_PORT = 7777;
