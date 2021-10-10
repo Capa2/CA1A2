@@ -7,6 +7,7 @@ import edu.emory.mathcs.backport.java.util.Arrays;
 import entities.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import utils.EMF_Creator;
 
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@Disabled
 class AddressFacadeTest {
     private static EntityManagerFactory emf;
     private static AddressFacade facade;
